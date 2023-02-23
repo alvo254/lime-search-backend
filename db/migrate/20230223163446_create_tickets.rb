@@ -3,7 +3,7 @@ class CreateTickets < ActiveRecord::Migration[7.0]
     create_table :tickets do |t|
       t.string :Title
       t.string :Description
-      t.date :ScheduledData
+      t.date :ScheduledDate
 
       t.timestamps
     end

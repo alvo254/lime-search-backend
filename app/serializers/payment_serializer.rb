@@ -1,3 +1,3 @@
 class PaymentSerializer < ActiveModel::Serializer
-  attributes :id, :TransactionCode, :FirstName, :LastName, :Amount, :AccountNumber, :TransactionDate
+  attributes :id, :TransactionCode, :Amount, :AccountNumber, :TransactionDate
 end

@@ -3,9 +3,9 @@
 one:
   Title: MyString
   Description: MyString
-  ScheduledData: 2023-02-23
+  ScheduledDate: 2023-02-23
 
 two:
   Title: MyString
   Description: MyString
-  ScheduledData: 2023-02-23
+  ScheduledDate: 2023-02-23

@@ -4,7 +4,6 @@ class Users::Devise::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
   respond_to :json
-
   # GET /resource/sign_up
   # def new
   #   super
@@ -25,6 +24,19 @@ class Users::Devise::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+  # DELETE /resource
+  # def destroy
+  #   super
+  # end
+
+  # GET /resource/cancel
+  # Forces the session data which is usually expired after sign
+  # in to be expired now. This is useful if the user wants to
+  # cancel oauth signing in/up in the middle of the process,
+  # removing all OAuth session data.
+  # def cancel
+  #   super
+  # end
   private
 
   def respond_with(resources, _opts={})
@@ -44,19 +56,6 @@ class Users::Devise::RegistrationsController < Devise::RegistrationsController
   def sign_up_params
     params.permit(:email, :password, :password_confirmation)
   end
-  # DELETE /resource
-  # def destroy
-  #   super
-  # end
-
-  # GET /resource/cancel
-  # Forces the session data which is usually expired after sign
-  # in to be expired now. This is useful if the user wants to
-  # cancel oauth signing in/up in the middle of the process,
-  # removing all OAuth session data.
-  # def cancel
-  #   super
-  # end
 
   # protected
 

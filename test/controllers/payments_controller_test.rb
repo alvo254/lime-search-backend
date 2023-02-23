@@ -12,7 +12,7 @@ class PaymentsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create payment" do
     assert_difference("Payment.count") do
-      post payments_url, params: { payment: { AccountNumber: @payment.AccountNumber, Amount: @payment.Amount, FirstName: @payment.FirstName, LastName: @payment.LastName, TransactionCode: @payment.TransactionCode, TransactionDate: @payment.TransactionDate } }, as: :json
+      post payments_url, params: { payment: { AccountNumber: @payment.AccountNumber, Amount: @payment.Amount, TransactionCode: @payment.TransactionCode, TransactionDate: @payment.TransactionDate } }, as: :json
     end
 
     assert_response :created
@@ -24,7 +24,7 @@ class PaymentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update payment" do
-    patch payment_url(@payment), params: { payment: { AccountNumber: @payment.AccountNumber, Amount: @payment.Amount, FirstName: @payment.FirstName, LastName: @payment.LastName, TransactionCode: @payment.TransactionCode, TransactionDate: @payment.TransactionDate } }, as: :json
+    patch payment_url(@payment), params: { payment: { AccountNumber: @payment.AccountNumber, Amount: @payment.Amount, TransactionCode: @payment.TransactionCode, TransactionDate: @payment.TransactionDate } }, as: :json
     assert_response :success
   end
 

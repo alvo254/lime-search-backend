@@ -76,6 +76,9 @@ class Users::Devise::SessionsController < Devise::SessionsController
     params.permit(:email, :password)
   end
 
+
+
+
   # POST /resource/sign_in
   # def create
   #   super
