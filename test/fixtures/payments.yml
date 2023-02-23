@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  TransactionCode: MyString
+  FirstName: MyString
+  LastName: MyString
+  Amount: 1
+  AccountNumber: MyString
+  TransactionDate: 2023-02-23
+
+two:
+  TransactionCode: MyString
+  FirstName: MyString
+  LastName: MyString
+  Amount: 1
+  AccountNumber: MyString
+  TransactionDate: 2023-02-23

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :payments
+  resources :users
+  resources :customers
+
+
   devise_for :users, path: 'users', path_names:{
     sign_in: 'login',
     sign_out: 'signout',
