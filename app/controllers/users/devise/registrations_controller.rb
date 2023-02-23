@@ -3,6 +3,7 @@
 class Users::Devise::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
+  respond_to :json
 
   # GET /resource/sign_up
   # def new
@@ -24,6 +25,25 @@ class Users::Devise::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+  private
+
+  def respond_with(resources, _opts={})
+    if resource.persisted?
+      render json:{
+        status: {code: 200, message: 'Signed up successfully'}, 
+        data: UserSerializer.new(resource).serializable_hash[:data][:attributes]
+      }.to_json
+    else
+      render json: {
+        status: {message: "User couldn't be created
+        successfully. #{resource.errors.full_messages.to_sentence} "}
+      }, status: :unprocessable_entity
+    end
+  end
+
+  def sign_up_params
+    params.permit(:email, :password, :password_confirmation)
+  end
   # DELETE /resource
   # def destroy
   #   super
