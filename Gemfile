@@ -16,6 +16,7 @@ gem 'active_model_serializers'
 gem "jsonapi-serializer"
 gem "tzinfo-data"
 
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
