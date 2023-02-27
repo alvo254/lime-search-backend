@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   has_many :tickets
   has_many :payments, through: :tickets
-  belongs_to :customer
+
 end

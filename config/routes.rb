@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :payments
   resources :users
   resources :customers
+  get "/me", to: "users#show"
 
 
   devise_for :users, path: 'users', path_names:{
