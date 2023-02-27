@@ -1,4 +1,3 @@
 class PaymentSerializer < ActiveModel::Serializer
-  attributes :id, :TransactionCode, :Amount, :AccountNumber, :TransactionDate, :Amount
-  has_many :tickets
+  attributes :id, :TransactionCode, :Amount, :AccountNumber, :TransactionDate, :customer_id
 end

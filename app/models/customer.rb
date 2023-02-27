@@ -1,6 +1,4 @@
 class Customer < ApplicationRecord
-    belongs_to :user
-    belongs_to :payment
-    belongs_to :ticket
-
+    has_many :tickets
+    has_many :payments, through: :tickets
 end

@@ -1,8 +1,5 @@
 class CustomerSerializer < ActiveModel::Serializer
   attributes :id, :FirstName, :LastName, :Username, :ExpiryDate
-  belongs_to :user
-  belongs_to :payment
-  belongs_to :ticket
-
-
+  has_many :payments, through: :tickets
+  has_many :tickets
 end

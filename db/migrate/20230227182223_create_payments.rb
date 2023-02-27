@@ -5,6 +5,7 @@ class CreatePayments < ActiveRecord::Migration[7.0]
       t.integer :Amount
       t.string :AccountNumber
       t.date :TransactionDate
+      t.integer :customer_id
 
       t.timestamps
     end

@@ -4,10 +4,12 @@ one:
   TransactionCode: MyString
   Amount: 1
   AccountNumber: MyString
-  TransactionDate: 2023-02-23
+  TransactionDate: 2023-02-27
+  customer_id: 1
 
 two:
   TransactionCode: MyString
   Amount: 1
   AccountNumber: MyString
-  TransactionDate: 2023-02-23
+  TransactionDate: 2023-02-27
+  customer_id: 1

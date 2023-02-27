@@ -3,9 +3,15 @@
 one:
   Title: MyString
   Description: MyString
-  ScheduledDate: 2023-02-23
+  ScheduledDate: 2023-02-27
+  user_id: 1
+  customer_id: 1
+  payment_id: 1
 
 two:
   Title: MyString
   Description: MyString
-  ScheduledDate: 2023-02-23
+  ScheduledDate: 2023-02-27
+  user_id: 1
+  customer_id: 1
+  payment_id: 1
