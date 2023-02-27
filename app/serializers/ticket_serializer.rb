@@ -1,5 +1,5 @@
 class TicketSerializer < ActiveModel::Serializer
-  attributes :id, :Title, :Description, :ScheduledDate, :Amount
+  attributes :id, :Title, :Description, :ScheduledDate
   belongs_to :customer
   belongs_to :payment
 
