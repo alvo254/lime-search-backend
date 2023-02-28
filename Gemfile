@@ -19,6 +19,9 @@ gem "tzinfo-data"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
+gem "pg"
+gem "dotenv-rails"
+gem "faker"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"

@@ -16,5 +16,15 @@ Tick = Tickets.new(Title:"Major", Description:"For you", ScheduledDate:12/04/202
 
 use = User.new(Name:"Alvin", Email:"alvin@gmail.com", Password:"234523")
 
+10.each do
+    username = Faker::Esport.player
+    name = Faker::Name.unique.name
+    first = Faker::Job.title
+    email = Faker::Internet.unique.email
+    address = Faker::Address.full_address
+    phone = Faker::PhoneNumber.unique.cell_phone
+    User.create(username: username, name: name, email: email, profession: profession, address: address, phone: phone )
+end
+
 
 
